@@ -12,7 +12,7 @@
 from tkinter import *
 import datetime
 import time
-#import winsound
+import winsound
 import threading
 
 
@@ -47,7 +47,7 @@ def alarm():
     
                 state.config(text="Time To Wake Up!", bg="black")
                 winsound.PlaySound(
-                    "/sdcard/python/project/min-app/gui_tkinter/alba4mbrmg/alarm/Alarm.mp3"
+                    "Alarm.mp3"
                 )
 
                 hour.set(hours[0])
@@ -65,7 +65,7 @@ alarm_app.geometry('700x450')    # Size Wimdow in PC
 
 alarm_app.title("Alarm App")    # Title App in PC
 
-icon_frame = PhotoImage(file=r"/sdcard/python/project/min-app/gui_tkinter/alba4mbrmg/alarm/img/icon.png")    # Icon App in PC
+icon_frame = PhotoImage(file=r"img/icon.png")    # Icon App in PC
 alarm_app.iconphoto(False, icon_frame)
 
 
